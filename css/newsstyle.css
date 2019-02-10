@@ -1,0 +1,285 @@
+@import "flex.css";
+@import "flexbox.css";
+@import "pl.css";
+
+* {  box-sizing: border-box; }
+
+
+.n-img {
+    width: 250px;
+    height: 180px;
+}
+
+
+.shl1 {
+    text-align: left;
+    font-family: "Arial Narrow";
+    text-transform: uppercase;
+    color: midnightblue;
+}
+
+
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.bborder {
+    border-bottom: 1px solid steelblue;
+}
+
+.fonts {
+    font-size: 0.9em;
+    text-align: justify;
+}
+
+.btransparent {
+    background: transparent;
+}
+
+.hbackground {
+    background-color: #2572aa;
+}
+
+.lnbackground {
+    background-color: snow;
+}
+
+.lightblue {
+    background: #222222;
+}
+
+.emptyl {
+    width: 100%;
+    background-color: steelblue;
+    height: 100px;
+    font-size: 1.5em;
+}
+
+.amplual {
+    width: 100%;
+    background-color: #cccccc;
+    height: 5%;
+    font-size: 1.3em;
+}
+
+.h3back {
+    width: 100%;
+    background-color: gainsboro;
+    height: 100px;
+    font-size: 1.2em;
+}
+
+.sidecolor {
+    background-color: lavender;
+}
+
+.hbackgroundimg {
+    background-image: url(../pics/header.jpg);
+    /*height: 100%;*/
+    width: 100%;
+    /*margin: 10% 0;*/
+}
+
+#auth {
+    border-style: double;
+    border-color: darkblue;
+    border-radius: 10px;
+    background-image: linear-gradient(to top, white, lightblue);
+    position: fixed;
+    z-index: 100;
+    opacity: 0;
+    pointer-events: none;
+    display: none;
+    margin-top: 10%;
+    margin-left: 39%;
+}
+
+#auth:target {
+    opacity: 100;
+    pointer-events: auto;
+    overflow: auto;
+    display: inline-block;
+}
+
+.sh {
+    font-variant: petite-caps;
+    font-family: "Arial Narrow";
+}
+
+
+
+.openRF {
+    background-color: lavender;
+    font-style: normal;
+    font-family: "Arial Narrow";
+    color: white;
+    border-radius: 3px;
+    border: hidden;
+    width: 110%;
+    height: 90%;
+    color: #2572aa;
+    text-transform: uppercase;
+    font-weight: 200;
+    /*font-variant: all-petite-caps;*/
+}
+
+.iconsize {
+    width: 10%;
+    height: 50%;
+    margin-left: 90%;
+}
+
+.xsinvisible {
+    display: none;
+}
+
+
+.xsvisible {
+    display: block;
+}
+
+.plimg {
+    width: 250px;
+    /*height: 400px;*/
+    padding: 3px;
+
+}
+
+
+.plimg:hover {
+    padding: 0;
+}
+
+.plimgxs {
+    width: 150px;
+    height: 150px;
+   /* padding: 50px 100px 200px;*/
+
+}
+
+.visibleimg {                                              /*!!!important;*/
+    display: none;
+}
+
+
+.plinfovisible {
+    display: none;
+}
+
+
+@media screen and  (max-width: 1024px ){
+    .hidden {
+        display: none;
+    }
+
+    .plinfoinvisible {
+        display: none;
+    }
+
+    .plinfovisible {
+        display: block;
+    }
+
+    .plinfo {
+        column-count: 2;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .emptyl {
+        width: 100%;
+        background-color: steelblue;
+        height: 70px;
+        font-size: 1.3em;
+    }
+
+    .h3back {
+        width: 100%;
+        background-color: gainsboro;
+        height: 70px;
+        font-size: 1em;
+    }
+
+    h1 {
+        font-size: 1.3em;
+    }
+
+    .logo {
+        width: 100px;
+        height: 100px;
+        border: none;
+        background: transparent;
+        margin-left: 20%;
+        margin-top: 5%;
+    }
+
+}
+
+
+
+@media screen and (max-width: 640px) {
+
+
+    .displist {
+        clear: right;
+    }
+
+    .hiddenmenu {
+        display: none
+    }
+
+    .hiddenimg {                                              /*!!!important;*/
+        display: none;
+    }
+
+    .plimgxs {
+        width: 100px;
+        height: 100px;
+        /*height: 400px;*/
+        padding: 3px;
+
+    }
+
+    .visibleimg {                                              /*!!!important;*/
+        display: block;
+    }
+
+
+    .xsinvisible {
+        display: block;
+        text-align: center;
+    }
+
+    .xsvisible {
+        display: none;
+    }
+
+
+    .submenu {
+        top: 120%;
+        left: 20%;
+    }
+
+    .menu li:hover .submenu {
+        width: 120%;
+        /*font-size: x-large;*/
+        margin-left: 0;
+
+    }
+
+    li {
+        font-size: 1.2em;
+        text-transform: uppercase;
+        width: 100px;
+        height: 25px;
+    }
+
+
+    li:hover {
+        border-bottom: none;
+    }
+
+}

@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/flex.css">
+    <link rel="stylesheet" href="css/flex.css">
+    <link rel="stylesheet" href="css/newsstyle.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/match.css">
+    <link rel="stylesheet" href="css/matchred.css">
+    <!--<link rel="stylesheet" href="css/tourns.css">-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Marmelad" >
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
+    <script src="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script></head>
+<body>
+
+<!--menu-->
+
+<div class="container column-container">
+    <div class="row-container hbackground">
+        <div class="flex-1 btransparent">
+            <img src="shlspb.png" class="logo padding">
+        </div>
+        <div class="column-container flex-5">
+            <div class="flex-container2 flex-1">
+                <h1 class="shl padding" style="margin-left: 3%">Saint-petersburg student hockey league</h1>
+            </div>
+            <div class="flex-container2 flex-1">
+                <nav class="flex-container2">
+                    <ul id="main">
+                        <li>Главная</li>
+                        <li>Турниры
+                            <ul class="drop">
+                                <div>
+                                    <li>Чемпионат</li>
+                                    <li>Первенство</li>
+                                    <li>Горняк</li>
+                                </div>
+                            </ul>
+                        </li>
+                        <li>Команды
+                            <ul class="drop">
+                                <div>
+                                    <li>Лисы</li>
+                                    <li>Волки ЛТУ</li>
+                                    <li>Политехник</li>
+                                    <li>Морские волки</li>
+                                    <li>Университет Лесгафта</li>
+                                </div>
+                            </ul>
+                        </li>
+                        <li>Статистика
+                            <ul class="drop">
+                                <div>
+                                    <li>Лидеры</li>
+                                    <li>Полевые</li>
+                                    <li>Вратари</li>
+                                </div>
+                            </ul>
+                        </li>
+                        <div id="marker"></div>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+
+<form name="game_user">
+<div class="flex-1 lnbackground column-container marginlarge">
+    <div class="hbackground h3back backlastgames">
+        <h3 class="shl padding gamename">Матч Команда 1 - Команда 2</h3>
+        <div class="clock">
+            <div id="hour">01</div>
+            <div id="minute">00</div>
+            <div id="second">00</div>
+        <!--<span id="my_timer">01:00:00</span>-->
+        </div>
+        <div class="startbut"><input type="button" value="Старт" id="timer"></div>
+        <!--
+
+        -->
+    </div>
+
+    <div class="flex-1 row-container marginlarge">
+        <div class="flex-1 btransparent">
+            <img src="shlspb.png" class="teamlogo1 padding">
+            <p class="teamname">Team1</p>
+        </div>
+        <div class="flex-1 btransparent res_common">
+            <div class="result">
+                <div id="result1">0</div>:<div id="result2">0</div>
+            </div>
+            <p class="gamedate">12.02.18</p>
+        </div>
+        <div class="flex-1 btransparent">
+            <img src="shlspb.png" class="teamlogo1 padding">
+            <p class="teamname">Team2</p>
+        </div>
+    </div>
+
+    <div class="hbackground h3back backlastgames">
+        <h3 class="shl padding gamename">Голы</h3>
+    </div>
+    <div class="flex-1 row-container bottomborder">
+        <div class="flex-1 column-container marginlarge goalsteam1" id="goalsteam1">
+           <!-- <div class="flex-1 goal">
+                <div class="numofgoal">#1</div>
+                Петров А (Иванов Б, Сидоров С)
+                <div class="timeofgoal">12:44</div>
+            </div>
+            <div class="flex-1 goal"><div class="numofgoal">#2</div> Петров А (Иванов Б, Сидоров С)
+                <div class="timeofgoal">22:44</div>
+                <div class="powplay">+1</div>
+            </div>
+            <div class="flex-1 goal"><div class="numofgoal">#3</div> Петров А (Сидоров С)
+                <div class="timeofgoal">32:44</div>
+            </div>-->
+        </div>
+        <div class="flex-1 column-container goalsteam2" id="goalsteam2">
+           <!-- <div class="flex-1 goal"><div class="numofgoal">#1</div> Коровин А (Быков Б, Сидоров В)
+                <div class="timeofgoal">31:44</div>
+                <div class="powplay">-1</div>
+            </div>-->
+        </div>
+    </div>
+
+    <div class="bottomborder">
+        <h3 class="shl gamename colorfalls" >Удаления</h3>
+    </div>
+    <div class="flex-1 row-container">
+        <div class="flex-1 column-container marginlarge goalsteam1" id="team1falls">
+            <!--<div class="flex-1 goal">
+                <div class="timeofgoal">12:44</div>
+                Петров А
+                <div class="numofgoal">2 мин</div>
+                <div class="nameoffall">ЗД-КЛ</div>
+            </div>-->
+        </div>
+        <div class="flex-1 column-container goalsteam2" id="team2falls">
+            <!--<div class="flex-1 goal">
+                <div class="timeofgoal">03:44</div>
+                Петров А
+                <div class="numofgoal">2 мин</div>
+                <div class="nameoffall">БЛОК</div>
+            </div>
+            <div class="flex-1 goal">
+                <div class="timeofgoal">17:44</div>
+                Ламин П
+                <div class="numofgoal">2 мин</div>
+                <div class="nameoffall">ПОДН</div>
+            </div>
+            <div class="flex-1 goal">
+                <div class="timeofgoal">21:44</div>
+                Картин Д
+                <div class="numofgoal">2 + 2 мин</div>
+                <div class="nameoffall">ВС-КЛ</div>
+            </div>-->
+        </div>
+    </div>
+
+
+    <div class="hbackground h3back backlastgames">
+        <h3 class="shl padding gamename">Составы команд</h3>
+    </div>
+    <div class="flex-1 row-container marginlarge">
+        <div class="flex-1 padding">Команда 1
+            <table id="team1" border="1">
+                <thead>
+                <tr>
+                    <th data-type="number">#</th>
+                    <th data-type="string">Имя</th>
+                    <th data-type="string">Амплуа</th>
+                    <th data-type="string">Игровой номер</th>
+                    <th data-type="string">Метка</th>
+                </tr>
+                </thead>
+            </table>
+        </div>
+        <div class="flex-1 padding">Team 2
+            <table id="team2" border="1">
+                <thead>
+                <tr>
+                    <th data-type="number">#</th>
+                    <th data-type="string">Имя</th>
+                    <th data-type="string">Амплуа</th>
+                    <th data-type="string">Игровой номер</th>
+                    <th data-type="string">Метка</th>
+                </tr>
+                </thead>
+            </table>
+        </div>
+    </div>
+    <div class="flex-1 row-container darkgrayback">
+        <div id="fminutes" class="flex-1 row-container stat">
+            <div class="flex-2">
+                <div class="ct-series-a ct-slice-donut" id="chart3" style="display: block"></div></div>
+            <div class="flex-1 statnames">
+                <p>Штрафные минуты</p>
+                <p>Team 1 10</p>
+                <p>Team 2 12</p>
+            </div>
+        </div>
+            <div id='shots' class="flex-1 stat row-container padding">
+                <div class="flex-2">
+                <div class="ct-series-a ct-slice-donut" id="chart1" style="display: block"></div></div>
+                <div class="flex-1 statnames">
+                    <p>Броски</p>
+                    <p>Team 1 34</p>
+                    <p>Team 2 45</p>
+                </div>
+            </div>
+            <div id='refshots' class="flex-1 row-container stat">
+                <div class="flex-2">
+                <div class="ct-series-a ct-slice-donut" id="chart2" style="display: block"></div></div>
+                <div class="flex-1 statnames">
+                    <p>Отраженные броски</p>
+                    <p>Team 1 92.4 %</p>
+                    <p>Team 2 96.1 %</p>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+</div>
+
+</form>
+<!--footer-->
+<div class="flex-1 lnbackground">
+    <div class="bottom flex-1 row-container">
+        <p>
+            <a href="">Privacy Policy</a> |
+            <a href="">Terms of Use</a> |
+            <a href="">Contact</a><br>
+            <span>© 2018 SHL SPb, all rights reserved.</span>
+        </p>
+        <div class="socialNet">
+            <ul>
+                <li><a class="twitterNet" href=""></a></li>
+                <li><a class="facebookNet" href=""></a></li>
+                <li><a class="rssNet" href=""></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<script src="js/match.js"></script>
+<script src="js/match_socket.js"></script>
+</body>
+</html>

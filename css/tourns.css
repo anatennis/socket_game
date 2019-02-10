@@ -1,0 +1,63 @@
+.backlastgames {
+    background-color: midnightblue;
+}
+
+.greyback {
+    background-color: gainsboro;
+}
+
+.teamlogo1 {
+    position: absolute;
+    height: 3.6em;
+    height: 3.6em;
+    margin: 1em 0 0 1em;
+    align-items: center;
+
+}
+.res_common {
+    margin-top: 5%;
+}
+
+.result {
+    text-align: center;
+    font-size: 50px;
+    color: midnightblue;
+    margin: 15px 0 0 0;
+    background-color: gainsboro;
+    border-radius: 5px;
+
+}
+
+.result:hover {
+    background-color: midnightblue;
+    color: gainsboro;
+}
+
+a {
+    color: midnightblue;
+}
+
+a:hover {
+    color: gainsboro;
+}
+.gamedate {
+    text-align: center;
+    font-size: 15px;
+    color: gray;
+    margin: 5px 0 0 0;
+}
+
+.lastgame {
+    padding: 5px;
+    width: 100%;
+    height: 150px;
+    margin: 10px;
+    background-color: lightsteelblue;
+    border-radius: 5px;
+}
+
+.teamname {
+    color: midnightblue;
+    margin-top: 5em;
+    text-align: center;
+}

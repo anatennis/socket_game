@@ -1,0 +1,10 @@
+
+#res1, #res2, .startbut, #addbutt {
+    display: inline-block;
+}
+
+#addbutt {
+    width: 25px;
+    height: 25px;
+    align-items: center;
+}

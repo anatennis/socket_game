@@ -1,0 +1,20 @@
+{
+    "name": "anastasia/socket",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "A",
+            "email": "romanova@fhspb.ru"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "cboden/ratchet": "^0.4.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Socket\\":"src/"
+        }
+    }
+}

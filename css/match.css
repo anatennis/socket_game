@@ -1,0 +1,155 @@
+.backlastgames {
+    background-color: midnightblue;
+}
+
+.clock {
+    background-color: skyblue;
+    border-radius: 10px;
+    display: inline-block;
+    padding: 10px;
+    font-size: x-large;
+    margin: 10px auto auto 50%;
+}
+
+.gamename, #minute, #second {
+    display: inline-block;
+}
+
+
+.greyback {
+    background-color: gainsboro;
+}
+
+.teamlogo1 {
+    position: absolute;
+    height: 8.6em;
+    width: 8.6em;
+    margin: 2em 0 0 5em;
+    align-items: center;
+}
+
+.res_common {
+    margin-top: 5%;
+}
+
+.result {
+    text-align: center;
+    font-size: 80px;
+    color: midnightblue;
+    margin: 15px 0 0 0;
+    background-color: gainsboro;
+    border-radius: 5px;
+    height: 1.6em;
+    padding: 0.2em;
+    font-family: 'Marmelad', sans-serif;
+
+}
+
+#result1, #result2 {
+    display: inline-block;
+}
+
+.gamedate {
+    text-align: center;
+    font-size: 15px;
+    color: gray;
+    margin: 5px 0 0 0;
+}
+
+.lastgame {
+    padding: 5px;
+    width: 100%;
+    height: 150px;
+    margin: 10px;
+    background-color: lightsteelblue;
+    border-radius: 5px;
+}
+
+.teamname {
+    color: midnightblue;
+    margin-top: 12em;
+    text-align: center;
+    font-family: 'Marmelad', sans-serif;
+}
+
+.goalsteam1 {
+    width: 100%;
+    font-family: 'Marmelad', sans-serif;
+    border-right: solid 2px midnightblue;
+}
+.goalsteam2 {
+    font-family: 'Marmelad', sans-serif;
+}
+
+
+.numofgoal, .timeofgoal {
+    color: darkslategray;
+    display: inline-block;
+    background-color: #cccccc;
+    border-radius: 10px;
+    padding: 3px;
+}
+
+.goal {
+    padding: 5px;
+}
+
+.nameoffall {
+    display: inline-block;
+}
+
+.powplay {
+    color: darkslategray;
+    display: inline-block;
+    background-color: lightsteelblue;
+    border-radius: 100%;
+    padding: 3px;
+}
+
+.bottomborder {
+    border-bottom: solid 3px midnightblue;
+}
+
+.colorfalls {
+    color: midnightblue;
+}
+
+/*table*/
+
+table {text-align: center; border-collapse: collapse; width: 100%; margin: 0 auto 1rem; border-radius: 10%}
+
+th, td { padding: 0.6rem; font-size: 15px; }
+
+tr {background: hsl(50, 50%, 80%); }
+
+tr, td { transition: .1s ease-in; }
+
+tr:first-child {background: hsla(12, 100%, 40%, 0.5); }
+
+tr:nth-child(even) { background: hsla(50, 50%, 80%, 0.7); }
+
+td:empty {background: hsla(50, 25%, 60%, 0.7); }
+
+tr:hover:not(#firstrow), tr:hover td:empty {background: lightsteelblue; pointer-events: visible;}
+tr:hover:not(#firstrow) { transform: scale(1.2); font-weight: 700; box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.5);}
+
+
+.darkgrayback {
+    background: darkslategray;
+}
+
+.stat > p {
+    flex-wrap: wrap;
+    color: white;
+    text-align: center;
+    font-size: 25px;
+}
+
+.sts, .statnames {
+    display: inline-block;
+}
+
+.stat {
+    padding-top: 2em;
+    color: white;
+}
